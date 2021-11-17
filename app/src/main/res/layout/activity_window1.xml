@@ -1,133 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:id="@+id/map"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/cityName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cityTunja"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textAlignment="center"
             android:background="@color/cabeza"
             android:padding="10dp"
+            android:text="@string/cityTunja"
+            android:textAlignment="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
+
 
         <ImageView
             android:id="@+id/image1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/cityName"
             android:src="@drawable/tunja_500px"
+            app:layout_constraintTop_toBottomOf="@id/cityName"
 
-            />
-
+            tools:layout_editor_absoluteX="0dp" />
 
         <TextView
             android:id="@+id/infoGeneralV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/infoGeneral"
-            app:layout_constraintTop_toBottomOf="@+id/image1"
-            android:textStyle="bold"
-            android:textAlignment="textStart"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            />
+            android:text="@string/infoGeneral"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/image1" />
 
         <TextView
             android:id="@+id/paragraph1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
-            android:text="@string/tunja"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            app:layout_constraintTop_toBottomOf="@id/infoGeneralV"
-            />
+            android:text="@string/tunja"
+            app:layout_constraintTop_toBottomOf="@id/infoGeneralV" />
 
         <TextView
             android:id="@+id/infoLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/location"
-            app:layout_constraintTop_toBottomOf="@+id/paragraph1"
-            android:textStyle="bold"
-            android:textAlignment="textStart"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            />
+            android:text="@string/location"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/paragraph1" />
 
         <TextView
             android:id="@+id/paragraph2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
-            android:text="@string/locationTunja"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            app:layout_constraintTop_toBottomOf="@id/infoLocation"
-            />
+            android:text="@string/locationTunja"
+            app:layout_constraintTop_toBottomOf="@id/infoLocation" />
 
         <TextView
             android:id="@+id/infoTemperature"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/temperature"
-            app:layout_constraintTop_toBottomOf="@+id/paragraph2"
-            android:textStyle="bold"
-            android:textAlignment="textStart"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            />
+            android:text="@string/temperature"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/paragraph2" />
 
         <TextView
             android:id="@+id/paragraph3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
-            android:text="@string/tempTunja"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            app:layout_constraintTop_toBottomOf="@id/infoTemperature"
-            />
+            android:text="@string/tempTunja"
+            app:layout_constraintTop_toBottomOf="@id/infoTemperature" />
 
         <TextView
             android:id="@+id/infoSites"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sites"
-            app:layout_constraintTop_toBottomOf="@+id/paragraph3"
-            android:textStyle="bold"
-            android:textAlignment="textStart"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            />
+            android:text="@string/sites"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/paragraph3" />
 
         <TextView
             android:id="@+id/paragraph4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
-            android:text="@string/sitesTunja"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            app:layout_constraintTop_toBottomOf="@id/infoSites"
-            />
+            android:text="@string/sitesTunja"
+            app:layout_constraintTop_toBottomOf="@id/infoSites" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
