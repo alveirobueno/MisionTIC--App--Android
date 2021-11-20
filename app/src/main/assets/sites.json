@@ -12,12 +12,12 @@
 
     {
         "cityName":"Bogotá",
-        "largeInfo": "Tunja es un municipio colombiano, capital del departamento de Boyacá. Tunja fue construida sobre Hunza, la capital de la confederación Muisca - Chibcha el 6 de agosto de 1539",
-        "ubiGeo": "Santiago de Tunja está situado sobre la cordillera oriental de los Andes a 115 km al noreste de Bogotá. La extensión territorial del municipio de Tunja es de 121,4 km² de los cuales el 87% corresponde al área rural y el 13% al área urbana. Está ubicada en las coordenadas 5°32′7″N 73°22′04″O y su longitud en relación con Bogotá es de 0 grados, 43 minutos y 0 segundos.",
-        "tempClima":"Según la clasificación de Köppen, Tunja posee un clima de tipo Csb: templado y frío de alta montaña. La temperatura promedio anual es de 12,7 grados.",
-        "sitesRec":"El Centro Histórico de Tunja fue declarado Monumento Nacional en 1959, ya que conserva, en sus edificaciones coloniales (palacios, conventos, iglesias y calles inclinadas), valiosos tesoros artísticos, pinturas, esculturas y ornamentos. Tunja es un centro para la práctica deportiva de alto rendimiento, debido a su nivel bajo de contaminación ambiental y su altitud.",
-        "shortInfo":"ciudad capital del departamento de Boyacá",
-        "image":"tunja_500px.png",
+        "largeInfo": "Es la capital y la ciudad más grande de Colombia, tiene alrededor de 8 millones de habitantes. Constituye el centro político, económico, financiero y cultural del país, por lo tanto es el punto de encuentro de personas de todas las regiones, lo que la hace diversa y multicultural.",
+        "ubiGeo": "Ubicada en el centro del país, en la cordillera oriental, la capital del país tiene una extensión aproximada de 33 kilómetros de sur a norte y 16km de oriente a occidente y se encuentra situada en las siguientes coordenadas: Latitud Norte: 4º 35`56 y Longitud Oeste 74º04`51",
+        "tempClima":"La ciudad de Bogotá, al estar ubiccada en la cordillera Oriental del país, es decir, la zona andina, tiene un clima frío y muy seco",
+        "sitesRec":"La Candelaria, es el centro vibrante de Bogotá, allí fue fundada la ciudad en 1538. Con edificaciones de estilos colonial y republicano, más de 20 museos y cerca de 90 atractivos turísticos. Allí, podrás encontrar teatros, librerías, gastronomía y arte.",
+        "shortInfo":"Bogotá, 2600 metros más cerca de las estrellas.",
+        "image":"bogotá_500px.png",
         "punctuation":"4.5"
     },
 
