@@ -1,49 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginVertical="5dp">
+    app:cardBackgroundColor="#9DD2F0"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/item_site"
+    >
 
-    <TextView
-        android:id="@+id/titleList"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingHorizontal="10dp"
-        android:text="Ciudad"
-        android:background="@color/gray"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imageList"
-        android:layout_width="208dp"
-        android:layout_height="208dp"
-        android:src="@drawable/imagelistdraft"
-        app:layout_constraintTop_toBottomOf="@id/titleList"/>
+        <TextView
+            android:id="@+id/titleList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:text="Ciudad"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"/>
 
-    <TextView
-        android:id="@+id/textList"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@id/imageList"
-        app:layout_constraintTop_toBottomOf="@id/titleList"
-        app:layout_constraintRight_toRightOf="parent"
-        android:paddingHorizontal="10dp"
-        android:background="@color/gray"
-        android:textColor="@color/black"
-        android:text="@string/lorem" />
+        <ImageView
+            android:id="@+id/imageList"
+            android:layout_width="208dp"
+            android:layout_height="208dp"
+            android:src="@drawable/imagelistdraft"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleList"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ver detalle"
-        android:textColor="@color/white"
-        android:textSize="9sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/imageList"
-        app:layout_constraintRight_toRightOf="@id/textList"
-        app:layout_constraintTop_toBottomOf="@id/textList" />
+        <TextView
+            android:id="@+id/textList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/imageList"
+            app:layout_constraintTop_toBottomOf="@id/titleList"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:text="@string/lorem" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textPunct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/imageList"
+            app:layout_constraintTop_toBottomOf="@id/textList"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black"
+            android:text="Puntuación: 4.5"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
