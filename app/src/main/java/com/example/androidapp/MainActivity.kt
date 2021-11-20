@@ -5,13 +5,14 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import org.json.JSONObject
+import org.json.JSONArray
+import java.io.InputStream
+import java.util.ArrayList
+
 
 class MainActivity : AppCompatActivity() {
 
-//    ArrayList<String> cities = new ArrayList<>();
-//    ArrayList<String> imageCities = new ArrayList<>();
-//    ArrayList<String> infoCities = new ArrayList<>();
-//    ArrayList<String> punctCities = new ArrayList<>();
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,12 +24,13 @@ class MainActivity : AppCompatActivity() {
         recycler.layoutManager = LinearLayoutManager(this)
         recycler.adapter = adapter
 
-//        JSONObject obj = new JSONObject(loadJSONfromAssets());
+//        JSONObject obj = new JSONObject(JsonDataFromAsset("sites.json"));
 
 
     }
+    val cities = ""
 
-    private fun loadJSONfromAssets(): String {
-        TODO("Not yet implemented")
-    }
+//    private fun loadJSONfromAssets(): String {
+//        String json = null
+//    }
 }
