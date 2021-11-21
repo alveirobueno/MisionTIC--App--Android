@@ -6,42 +6,19 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
-import java.io.InputStream
 
-import org.json.JSONObject
+class SitesAdapter(
+    private var context: Context,
+    private var titleList: ArrayList<String>,
+    private var imageList: ArrayList<Int>,
+    private var textList: ArrayList<String>,
+    private var textPunct: ArrayList<String>
+):
+    RecyclerView.Adapter<SitesAdapter.ViewHolder>() {
 
-
-class SitesAdapter : RecyclerView.Adapter<SitesAdapter.ViewHolder>() {
-
-    private var cityText = arrayOf(
-        "Ciudad 1",
-        "Cuudad 2",
-        "Ciudad 3",
-        "Ciudad 4",
-        "Ciudad 5")
-
-    private var imageFiles = intArrayOf(
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_foreground)
-
-    private var shortInfoText = arrayOf(
-        "Info 1",
-        "Info 2",
-        "Info 3",
-        "Info 4",
-        "Info 5")
-
-    private var punctuationText = arrayOf(
-        "Puntuación 1",
-        "Puntuación 2",
-        "Puntuación 3",
-        "Puntuación 4",
-        "Puntuación 5")
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SitesAdapter.ViewHolder {
         val view = LayoutInflater
@@ -51,20 +28,24 @@ class SitesAdapter : RecyclerView.Adapter<SitesAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        viewHolder.cityName.text = cityText[position]
-        viewHolder.image.setImageResource(imageFiles[position])
-        viewHolder.shortInfo.text = shortInfoText[position]
-        viewHolder.punctuation.text = punctuationText[position]
+        viewHolder.cityName.text = titleList[position]
+        viewHolder.imageURL.setImageResource(imageList[position])
+        viewHolder.shortInfo.text = textList[position]
+        viewHolder.punctuation.text = textPunct[position]
+
+        viewHolder.itemView.setOnClickListener {
+            Toast.makeText(context, titleList[position], Toast.LENGTH_SHORT).show()
+        }
     }
 
-    override fun getItemCount(): Int = cityText.size
+    override fun getItemCount(): Int = titleList.size
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
-        val cityName = itemView.findViewById<TextView>(R.id.titleList)
-        val image = itemView.findViewById<ImageView>(R.id.imageList)
-        val shortInfo = itemView.findViewById<TextView>(R.id.textList)
-        val punctuation = itemView.findViewById<TextView>(R.id.textPunct)
+        val cityName: TextView = itemView.findViewById(R.id.titleList)
+        val imageURL: ImageView = itemView.findViewById(R.id.imageURL)
+        val shortInfo: TextView = itemView.findViewById(R.id.textList)
+        val punctuation: TextView = itemView.findViewById(R.id.textPunct)
 
     }
 

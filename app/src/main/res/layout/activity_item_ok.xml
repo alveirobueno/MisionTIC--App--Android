@@ -26,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <ImageView
-            android:id="@+id/imageList"
+            android:id="@+id/imageURL"
             android:layout_width="208dp"
             android:layout_height="208dp"
             android:src="@drawable/imagelistdraft"
@@ -37,7 +37,7 @@
             android:id="@+id/textList"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/imageList"
+            app:layout_constraintLeft_toRightOf="@id/imageURL"
             app:layout_constraintTop_toBottomOf="@id/titleList"
             app:layout_constraintRight_toRightOf="parent"
             android:paddingHorizontal="10dp"
@@ -48,7 +48,7 @@
             android:id="@+id/textPunct"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/imageList"
+            app:layout_constraintLeft_toRightOf="@id/imageURL"
             app:layout_constraintTop_toBottomOf="@id/textList"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="10dp"
