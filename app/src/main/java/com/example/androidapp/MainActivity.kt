@@ -14,7 +14,7 @@ import java.util.ArrayList
 class MainActivity : AppCompatActivity() {
 
     var titleList: ArrayList<String> = ArrayList()
-    var imageList: ArrayList<Int> = ArrayList()
+    var imageList: ArrayList<String> = ArrayList()
     var textList: ArrayList<String> = ArrayList()
     var textPunct: ArrayList<String> = ArrayList()
 
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             for (i in 0 until userArray.length()) {
                 val userDetail = userArray.getJSONObject(i)
                 titleList.add(userDetail.getString("cityName"))
-                imageList.add(userDetail.getInt("imageURL"))
+                imageList.add(userDetail.getString("imageURL"))
                 textList.add(userDetail.getString("shortInfo"))
                 textPunct.add(userDetail.getString("punctuation"))
             }

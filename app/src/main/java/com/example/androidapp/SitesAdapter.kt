@@ -8,12 +8,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
 
 class SitesAdapter(
     private var context: Context,
     private var titleList: ArrayList<String>,
-    private var imageList: ArrayList<Int>,
+    private var imageList: ArrayList<String>,
     private var textList: ArrayList<String>,
     private var textPunct: ArrayList<String>
 ):
@@ -29,9 +30,10 @@ class SitesAdapter(
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         viewHolder.cityName.text = titleList[position]
-        viewHolder.imageURL.setImageResource(imageList[position])
+//        viewHolder.imageURL.text = imageList[position]
         viewHolder.shortInfo.text = textList[position]
         viewHolder.punctuation.text = textPunct[position]
+        Picasso.get().load(imageList[position]).resize(208, 208).into(viewHolder.imageURL)
 
         viewHolder.itemView.setOnClickListener {
             Toast.makeText(context, titleList[position], Toast.LENGTH_SHORT).show()

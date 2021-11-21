@@ -20,9 +20,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
             android:text="Ciudad"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
+            android:textAlignment="center"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <ImageView
@@ -51,6 +53,7 @@
             app:layout_constraintLeft_toRightOf="@id/imageURL"
             app:layout_constraintTop_toBottomOf="@id/textList"
             app:layout_constraintRight_toRightOf="parent"
+            android:background="@color/button1"
             android:layout_marginTop="10dp"
             android:paddingHorizontal="10dp"
             android:textColor="@color/black"

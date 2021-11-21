@@ -6,9 +6,9 @@
             "ubiGeo": "Santiago de Tunja está situado sobre la cordillera oriental de los Andes a 115 km al noreste de Bogotá. La extensión territorial del municipio de Tunja es de 121,4 km² de los cuales el 87% corresponde al área rural y el 13% al área urbana. Está ubicada en las coordenadas 5°32′7″N 73°22′04″O y su longitud en relación con Bogotá es de 0 grados, 43 minutos y 0 segundos.",
             "tempClima": "Según la clasificación de Köppen, Tunja posee un clima de tipo Csb: templado y frío de alta montaña. La temperatura promedio anual es de 12,7 grados.",
             "sitesRec": "El Centro Histórico de Tunja fue declarado Monumento Nacional en 1959, ya que conserva, en sus edificaciones coloniales (palacios, conventos, iglesias y calles inclinadas), valiosos tesoros artísticos, pinturas, esculturas y ornamentos. Tunja es un centro para la práctica deportiva de alto rendimiento, debido a su nivel bajo de contaminación ambiental y su altitud.",
-            "shortInfo": "ciudad capital del departamento de Boyacá",
-            "imageURL": "tunja_500px.png",
-            "punctuation": "4.5"
+            "shortInfo": "Ciudad capital del departamento de Boyacá e ícono intelectual y cultural desde la época de la independencia de Colombia",
+            "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/CatedralTunja1.jpg/320px-CatedralTunja1.jpg",
+            "punctuation": "Puntuación: 4.5"
         },
         {
             "cityName": "Bogotá",
@@ -16,9 +16,9 @@
             "ubiGeo": "Ubicada en el centro del país, en la cordillera oriental, la capital del país tiene una extensión aproximada de 33 kilómetros de sur a norte y 16km de oriente a occidente y se encuentra situada en las siguientes coordenadas: Latitud Norte: 4º 35`56 y Longitud Oeste 74º04`51",
             "tempClima": "La ciudad de Bogotá, al estar ubiccada en la cordillera Oriental del país, es decir, la zona andina, tiene un clima frío y muy seco",
             "sitesRec": "La Candelaria, es el centro vibrante de Bogotá, allí fue fundada la ciudad en 1538. Con edificaciones de estilos colonial y republicano, más de 20 museos y cerca de 90 atractivos turísticos. Allí, podrás encontrar teatros, librerías, gastronomía y arte.",
-            "shortInfo": "Bogotá, 2600 metros más cerca de las estrellas.",
-            "imageURL": "bogota_500px.png",
-            "punctuation": "4.5"
+            "shortInfo": "Bogotá, 2600 metros más cerca de las estrellas, es la extensa capital en altura de Colombia. La Candelaria, su centro con adoquines, cuenta con sitios coloniales como el Teatro Colón neoclásico y la Iglesia de San Francisco del siglo XVII.",
+            "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Bogot%C3%A1_Colpatria_Night.jpg/320px-Bogot%C3%A1_Colpatria_Night.jpg",
+            "punctuation": "Puntuación: 4.5"
         },
         {
             "cityName": "Barranquilla",
@@ -26,9 +26,9 @@
             "ubiGeo": "Santiago de Tunja está situado sobre la cordillera oriental de los Andes a 115 km al noreste de Bogotá. La extensión territorial del municipio de Tunja es de 121,4 km² de los cuales el 87% corresponde al área rural y el 13% al área urbana. Está ubicada en las coordenadas 5°32′7″N 73°22′04″O y su longitud en relación con Bogotá es de 0 grados, 43 minutos y 0 segundos.",
             "tempClima": "Según la clasificación de Köppen, Tunja posee un clima de tipo Csb: templado y frío de alta montaña. La temperatura promedio anual es de 12,7 grados.",
             "sitesRec": "El Centro Histórico de Tunja fue declarado Monumento Nacional en 1959, ya que conserva, en sus edificaciones coloniales (palacios, conventos, iglesias y calles inclinadas), valiosos tesoros artísticos, pinturas, esculturas y ornamentos. Tunja es un centro para la práctica deportiva de alto rendimiento, debido a su nivel bajo de contaminación ambiental y su altitud.",
-            "shortInfo": "ciudad capital del departamento de Boyacá",
-            "imageURL": "barranquilla_500px.png",
-            "punctuation": "4.5"
+            "shortInfo": "Es la capital del departamento Atlántico de Colombia y es un desbordante puerto marino, bordeado por el río Magdalena. La ciudad es conocida por su enorme Carnaval.",
+            "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Panor%C3%A1mica_general_de_Barranquilla.JPG/320px-Panor%C3%A1mica_general_de_Barranquilla.JPG",
+            "punctuation": "Puntuación: 4.5"
         },
         {
             "cityName": "Manizales",
@@ -36,9 +36,9 @@
             "ubiGeo": "Santiago de Tunja está situado sobre la cordillera oriental de los Andes a 115 km al noreste de Bogotá. La extensión territorial del municipio de Tunja es de 121,4 km² de los cuales el 87% corresponde al área rural y el 13% al área urbana. Está ubicada en las coordenadas 5°32′7″N 73°22′04″O y su longitud en relación con Bogotá es de 0 grados, 43 minutos y 0 segundos.",
             "tempClima": "Según la clasificación de Köppen, Tunja posee un clima de tipo Csb: templado y frío de alta montaña. La temperatura promedio anual es de 12,7 grados.",
             "sitesRec": "El Centro Histórico de Tunja fue declarado Monumento Nacional en 1959, ya que conserva, en sus edificaciones coloniales (palacios, conventos, iglesias y calles inclinadas), valiosos tesoros artísticos, pinturas, esculturas y ornamentos. Tunja es un centro para la práctica deportiva de alto rendimiento, debido a su nivel bajo de contaminación ambiental y su altitud.",
-            "shortInfo": "ciudad capital del departamento de Boyacá",
-            "imageURL": "manizales_500px.png",
-            "punctuation": "4.5"
+            "shortInfo": "Manizales es una ciudad de la región cafetera montañosa del oeste de Colombia. Es conocida por sus eventos culturales, las calles empinadas y las vistas del volcán Nevado del Ruiz cercano.",
+            "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Catedral_de_Manizales.jpg/320px-Catedral_de_Manizales.jpg",
+            "punctuation": "Puntuación: 4.5"
         },
         {
             "cityName": "Pereira",
@@ -46,9 +46,9 @@
             "ubiGeo": "Santiago de Tunja está situado sobre la cordillera oriental de los Andes a 115 km al noreste de Bogotá. La extensión territorial del municipio de Tunja es de 121,4 km² de los cuales el 87% corresponde al área rural y el 13% al área urbana. Está ubicada en las coordenadas 5°32′7″N 73°22′04″O y su longitud en relación con Bogotá es de 0 grados, 43 minutos y 0 segundos.",
             "tempClima": "Según la clasificación de Köppen, Tunja posee un clima de tipo Csb: templado y frío de alta montaña. La temperatura promedio anual es de 12,7 grados.",
             "sitesRec": "El Centro Histórico de Tunja fue declarado Monumento Nacional en 1959, ya que conserva, en sus edificaciones coloniales (palacios, conventos, iglesias y calles inclinadas), valiosos tesoros artísticos, pinturas, esculturas y ornamentos. Tunja es un centro para la práctica deportiva de alto rendimiento, debido a su nivel bajo de contaminación ambiental y su altitud.",
-            "shortInfo": "ciudad capital del departamento de Boyacá",
-            "imageURL": "pereira_500px.png",
-            "punctuation": "4.5"
+            "shortInfo": "Pereira es una ciudad de una región montañosa cafetera en el oeste de Colombia, conocida por el café arábica suave. La plaza principal, Plaza de Bolívar, tiene una estatua del héroe de la independencia Simón Bolívar desnudo a caballo.",
+            "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Plaza-bolivar.jpg/320px-Plaza-bolivar.jpg",
+            "punctuation": "Puntuación: 4.5"
         }
     ]
 }
