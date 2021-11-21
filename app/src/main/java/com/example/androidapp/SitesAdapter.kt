@@ -10,7 +10,6 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-
 class SitesAdapter(
     private var context: Context,
     private var titleList: ArrayList<String>,
