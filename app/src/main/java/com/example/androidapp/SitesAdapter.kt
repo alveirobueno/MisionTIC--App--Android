@@ -14,11 +14,8 @@ class SitesAdapter(
     private var titleList: ArrayList<String>,
     private var imageList: ArrayList<String>,
     private var textList: ArrayList<String>,
-    private var textPunct: ArrayList<String>,
-//    private var largeInfoList: ArrayList<String>,
-//    private var ubiGeoList: ArrayList<String>,
-//    private var tempClimaList: ArrayList<String>,
-//    private var sitesRecList: ArrayList<String>
+    private var textPunct: ArrayList<String>
+
 ):
     RecyclerView.Adapter<SitesAdapter.ViewHolder>() {
 
@@ -45,10 +42,6 @@ class SitesAdapter(
         viewHolder.shortInfo.text = textList[position]
         viewHolder.punctuation.text = textPunct[position]
         Picasso.get().load(imageList[position]).resize(208, 208).into(viewHolder.imageURL)
-//        viewHolder.largeInfo.text = largeInfoList[position]
-//        viewHolder.ubiGeo.text = ubiGeoList[position]
-//        viewHolder.tempClima.text = tempClimaList[position]
-//        viewHolder.sitesRec.text = sitesRecList[position]
 
     }
 
@@ -60,10 +53,6 @@ class SitesAdapter(
         val imageURL: ImageView = itemView.findViewById(R.id.imageURL)
         val shortInfo: TextView = itemView.findViewById(R.id.textList)
         val punctuation: TextView = itemView.findViewById(R.id.textPunct)
-//        val largeInfo: TextView = itemView.findViewById(R.id.paragraph1)
-//        val ubiGeo: TextView = itemView.findViewById(R.id.paragraph2)
-//        val tempClima: TextView = itemView.findViewById(R.id.paragraph3)
-//        val sitesRec: TextView = itemView.findViewById(R.id.paragraph4)
 
         init {
             itemView.setOnClickListener{

@@ -1,10 +1,12 @@
 package com.example.androidapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import org.json.JSONObject
 import org.json.JSONException
 import java.io.IOException
@@ -18,10 +20,10 @@ class MainActivity : AppCompatActivity() {
     var imageList: ArrayList<String> = ArrayList()
     var textList: ArrayList<String> = ArrayList()
     var textPunct: ArrayList<String> = ArrayList()
-//    var largeInfoList: ArrayList<String> = ArrayList()
-//    var ubiGeoList: ArrayList<String> = ArrayList()
-//    var tempClimaList: ArrayList<String> = ArrayList()
-//    var sitesRecList: ArrayList<String> = ArrayList()
+    var largeInfoList: ArrayList<String> = ArrayList()
+    var ubiGeoList: ArrayList<String> = ArrayList()
+    var tempClimaList: ArrayList<String> = ArrayList()
+    var sitesRecList: ArrayList<String> = ArrayList()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +33,6 @@ class MainActivity : AppCompatActivity() {
 
         val recycler = findViewById<RecyclerView>(R.id.recycler)
         val adapter = SitesAdapter(this@MainActivity, titleList, imageList, textList, textPunct)
-        /*largeInfoList, ubiGeoList, tempClimaList, sitesRecList*/
 
 
         recycler.layoutManager = LinearLayoutManager(this)
@@ -40,7 +41,19 @@ class MainActivity : AppCompatActivity() {
         adapter.setOnItemClickListener(object : SitesAdapter.OnItemClickListener{
             override fun onItemClick(position: Int) {
 
-                Toast.makeText(this@MainActivity, "You clicked on item no. $position", Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this@MainActivity, "You clicked on item no. $position", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this@MainActivity, DetailActivity::class.java)
+
+                intent.putExtra("cityNameData", titleList[position])
+                intent.putExtra("imageURLData", imageList[position])
+                intent.putExtra("largeInfoData", largeInfoList[position])
+                intent.putExtra("ubiGeoData", ubiGeoList[position])
+                intent.putExtra("tempClimaData", tempClimaList[position])
+                intent.putExtra("sitesRecData", sitesRecList[position])
+
+
+                startActivity(intent)
+
             }
         })
 
@@ -53,10 +66,10 @@ class MainActivity : AppCompatActivity() {
                 imageList.add(userDetail.getString("imageURL"))
                 textList.add(userDetail.getString("shortInfo"))
                 textPunct.add(userDetail.getString("punctuation"))
-//                largeInfoList.add(userDetail.getString("largeInfo"))
-//                ubiGeoList.add(userDetail.getString("ubiGeo"))
-//                tempClimaList.add(userDetail.getString("tempClima"))
-//                sitesRecList.add(userDetail.getString("sitesRec"))
+                largeInfoList.add(userDetail.getString("largeInfo"))
+                ubiGeoList.add(userDetail.getString("ubiGeo"))
+                tempClimaList.add(userDetail.getString("tempClima"))
+                sitesRecList.add(userDetail.getString("sitesRec"))
             }
         }
         catch (e: JSONException) {
