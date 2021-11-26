@@ -2,6 +2,7 @@ package com.example.androidapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import org.json.JSONObject
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
     var imageList: ArrayList<String> = ArrayList()
     var textList: ArrayList<String> = ArrayList()
     var textPunct: ArrayList<String> = ArrayList()
+//    var largeInfoList: ArrayList<String> = ArrayList()
+//    var ubiGeoList: ArrayList<String> = ArrayList()
+//    var tempClimaList: ArrayList<String> = ArrayList()
+//    var sitesRecList: ArrayList<String> = ArrayList()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,8 +31,18 @@ class MainActivity : AppCompatActivity() {
 
         val recycler = findViewById<RecyclerView>(R.id.recycler)
         val adapter = SitesAdapter(this@MainActivity, titleList, imageList, textList, textPunct)
+        /*largeInfoList, ubiGeoList, tempClimaList, sitesRecList*/
+
+
         recycler.layoutManager = LinearLayoutManager(this)
         recycler.adapter = adapter
+
+        adapter.setOnItemClickListener(object : SitesAdapter.OnItemClickListener{
+            override fun onItemClick(position: Int) {
+
+                Toast.makeText(this@MainActivity, "You clicked on item no. $position", Toast.LENGTH_SHORT).show()
+            }
+        })
 
         try {
             val obj = JSONObject(this.loadJSONFromAsset())
@@ -38,6 +53,10 @@ class MainActivity : AppCompatActivity() {
                 imageList.add(userDetail.getString("imageURL"))
                 textList.add(userDetail.getString("shortInfo"))
                 textPunct.add(userDetail.getString("punctuation"))
+//                largeInfoList.add(userDetail.getString("largeInfo"))
+//                ubiGeoList.add(userDetail.getString("ubiGeo"))
+//                tempClimaList.add(userDetail.getString("tempClima"))
+//                sitesRecList.add(userDetail.getString("sitesRec"))
             }
         }
         catch (e: JSONException) {
