@@ -3,10 +3,10 @@ package com.example.androidapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import android.view.Menu
+import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
 import org.json.JSONObject
 import org.json.JSONException
 import java.io.IOException
@@ -28,12 +28,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        this.supportActionBar?.hide()
+//        this.supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 
         val recycler = findViewById<RecyclerView>(R.id.recycler)
         val adapter = SitesAdapter(this@MainActivity, titleList, imageList, textList, textPunct)
-
 
         recycler.layoutManager = LinearLayoutManager(this)
         recycler.adapter = adapter
@@ -41,7 +40,6 @@ class MainActivity : AppCompatActivity() {
         adapter.setOnItemClickListener(object : SitesAdapter.OnItemClickListener{
             override fun onItemClick(position: Int) {
 
-//                Toast.makeText(this@MainActivity, "You clicked on item no. $position", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@MainActivity, DetailActivity::class.java)
 
                 intent.putExtra("cityNameData", titleList[position])
@@ -50,7 +48,6 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra("ubiGeoData", ubiGeoList[position])
                 intent.putExtra("tempClimaData", tempClimaList[position])
                 intent.putExtra("sitesRecData", sitesRecList[position])
-
 
                 startActivity(intent)
 
@@ -75,6 +72,25 @@ class MainActivity : AppCompatActivity() {
         catch (e: JSONException) {
             e.printStackTrace()
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.settings_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId){
+            R.id.action_settings  -> {
+                val intent = Intent(this,
+                    SettingsActivity::class.java)
+
+                startActivity(intent)
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 
     private fun loadJSONFromAsset(): String {

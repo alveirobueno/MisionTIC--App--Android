@@ -49,6 +49,26 @@
             "shortInfo": "Pereira es una ciudad de una región montañosa cafetera en el oeste de Colombia, conocida por el café arábica suave. La plaza principal, Plaza de Bolívar, tiene una estatua del héroe de la independencia Simón Bolívar desnudo a caballo.",
             "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Plaza-bolivar.jpg/320px-Plaza-bolivar.jpg",
             "punctuation": "Puntuación: 4.5"
+        },
+        {
+            "cityName": "Desierto de la Tatacoa",
+            "largeInfo": "El Desierto de la Tatacoa es la segunda zona árida más extensa de Colombia después de la península de la Guajira, y es uno de los escenarios naturales más atractivos de Colombia",
+            "ubiGeo": " Ubicado a tan solo 40 minutos de Neiva,exactamente a unos pocos minutos del municipio de  villavieja del departamento del Huila ",
+            "tempClima": "El desierto puede superar los 45ºC al mediodía y en las noches la temperatura desciende en promedio a 18ºC.",
+            "sitesRec": "Destino sublime de tonalidades ocres y grisáceas. Una maravilla de la naturaleza clasificada como parte de un ecosistema de bosque seco tropical y  es uno de los escenarios naturales más atractivos de Colombia",
+            "shortInfo": "El Desierto de la Tatacoa es la segunda zona árida más extensa de Colombia después de la península de la Guajira, y es uno de los escenarios naturales más atractivos de Colombia",
+            "imageURL": "https://encolombia.com/wp-content/uploads/2020/01/Desierto-de-la-Tatacoa-696x391.jpg",
+            "punctuation": "Puntuación: 4.5"
+        },
+        {
+            "cityName": "Portales del Fraguita",
+            "largeInfo": "se dice que se formaron cuando el rio fraguita logro atravesar la roca y formo paredes de aproximadamente 50 metros de altura a lado y lado",
+            "ubiGeo": "Municipio de San José del Fragua, Departamento de Caquetá, sur de Colombia. ",
+            "tempClima": "23.9 °C. Precipitaciones,  promedios 2179 mm.",
+            "sitesRec": "La particularidad única de paisaje dibuja de manera natural un río con dirección recta durante un tramo, para luego perderse en medio de dos verdes montañas como si se tratara de una obra artística.",
+            "shortInfo": "La particularidad única de paisaje dibuja de manera natural un río con dirección recta durante un tramo",
+            "imageURL": "https://1.bp.blogspot.com/-u2VnSwMSGc8/XyspPMHM5UI/AAAAAAAAcR4/YkLXgyoZ1YI7Kw2uIrlBVlOSOC33MfaPwCLcBGAsYHQ/s640/portales-de-frag%25C3%25BCita-caquet%25C3%25A1-colombia-paisaje-1.jpg",
+            "punctuation": "Puntuación: 4.5"
         }
     ]
 }
