@@ -9,7 +9,7 @@ import com.squareup.picasso.Picasso
 class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_window1)
+        setContentView(R.layout.activity_detail)
 
         val titleDetail : TextView = findViewById(R.id.cityName)
         val image1Detail : ImageView = findViewById(R.id.image1)

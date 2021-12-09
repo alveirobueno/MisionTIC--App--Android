@@ -33,7 +33,7 @@ class SitesAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SitesAdapter.ViewHolder {
         val view = LayoutInflater
             .from(parent.context)
-            .inflate(R.layout.activity_item_ok, parent, false)
+            .inflate(R.layout.activity_item_list, parent, false)
         return ViewHolder(view, mListener)
     }
 
