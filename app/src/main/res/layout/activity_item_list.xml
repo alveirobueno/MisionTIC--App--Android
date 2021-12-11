@@ -44,6 +44,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:paddingHorizontal="10dp"
             android:textColor="@color/black"
+            android:maxLines="10"
             android:text="@string/lorem" />
 
         <TextView
