@@ -11,5 +11,5 @@ import retrofit2.http.Url
 interface RetroService {
 
     @GET("data")
-    suspend fun getDataFromApi(): ArrayList<SiteModel>
+    suspend fun getDataFromApi(): Response<List<SiteModel>>
 }
