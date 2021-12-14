@@ -19,6 +19,4 @@
             android:summary="Activar sonido de notificaciones"/>
     </PreferenceCategory>
 
-
-
 </PreferenceScreen>

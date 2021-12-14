@@ -10,19 +10,22 @@
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/cityName"
+            android:id="@+id/cityNameTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/cabeza"
+            android:background="@color/teal_700"
+            android:focusable="false"
             android:padding="10dp"
-            android:text="@string/cityTunja"
+            android:text="Ciudad"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -30,10 +33,11 @@
             android:id="@+id/image1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/tunja_500px"
-            app:layout_constraintTop_toBottomOf="@id/cityName"
-
-            tools:layout_editor_absoluteX="0dp" />
+            android:focusable="false"
+            android:paddingTop="0dp"
+            android:src="@drawable/temporal2_500px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cityNameTv" />
 
         <TextView
             android:id="@+id/infoGeneralV"
@@ -41,10 +45,11 @@
             android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            android:text="@string/infoGeneral"
+            android:text="Información general"
             android:textAlignment="textStart"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/image1" />
+            app:layout_constraintTop_toBottomOf="@+id/image1"
+            android:focusable="false"/>
 
         <TextView
             android:id="@+id/paragraph1"
@@ -53,8 +58,9 @@
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="@string/tunja"
-            app:layout_constraintTop_toBottomOf="@id/infoGeneralV" />
+            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+            app:layout_constraintTop_toBottomOf="@id/infoGeneralV"
+            android:focusable="false"/>
 
         <TextView
             android:id="@+id/infoLocation"
@@ -62,10 +68,11 @@
             android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            android:text="@string/location"
+            android:text="Ubicación geográfica"
             android:textAlignment="textStart"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/paragraph1" />
+            app:layout_constraintTop_toBottomOf="@+id/paragraph1"
+            android:focusable="false"/>
 
         <TextView
             android:id="@+id/paragraph2"
@@ -74,8 +81,9 @@
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="@string/locationTunja"
-            app:layout_constraintTop_toBottomOf="@id/infoLocation" />
+            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+            app:layout_constraintTop_toBottomOf="@id/infoLocation"
+            android:focusable="false"/>
 
         <TextView
             android:id="@+id/infoTemperature"
@@ -83,10 +91,11 @@
             android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            android:text="@string/temperature"
+            android:text="Temperatura y climatología"
             android:textAlignment="textStart"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/paragraph2" />
+            app:layout_constraintTop_toBottomOf="@+id/paragraph2"
+            android:focusable="false"/>
 
         <TextView
             android:id="@+id/paragraph3"
@@ -95,8 +104,9 @@
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="@string/tempTunja"
-            app:layout_constraintTop_toBottomOf="@id/infoTemperature" />
+            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+            app:layout_constraintTop_toBottomOf="@id/infoTemperature"
+            android:focusable="false"/>
 
         <TextView
             android:id="@+id/infoSites"
@@ -104,10 +114,11 @@
             android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            android:text="@string/sites"
+            android:text="Sitios recomendados"
             android:textAlignment="textStart"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/paragraph3" />
+            app:layout_constraintTop_toBottomOf="@+id/paragraph3"
+            android:focusable="false"/>
 
         <TextView
             android:id="@+id/paragraph4"
@@ -116,8 +127,10 @@
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="@string/sitesTunja"
-            app:layout_constraintTop_toBottomOf="@id/infoSites" />
+            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+            app:layout_constraintTop_toBottomOf="@id/infoSites"
+            android:focusable="false"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
