@@ -13,10 +13,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/cardRecycler">
 
         <TextView
-            android:id="@+id/titleList"
+            android:id="@+id/cityName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
@@ -31,36 +32,36 @@
             android:id="@+id/imageURL"
             android:layout_width="208dp"
             android:layout_height="208dp"
-            android:src="@drawable/imagelistdraft"
+            android:src="@drawable/temporal2_500px"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleList"/>
+            app:layout_constraintTop_toBottomOf="@id/cityName"/>
 
         <TextView
-            android:id="@+id/textList"
+            android:id="@+id/shortInfo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toRightOf="@id/imageURL"
-            app:layout_constraintTop_toBottomOf="@id/titleList"
+            app:layout_constraintTop_toBottomOf="@id/cityName"
             app:layout_constraintRight_toRightOf="parent"
             android:paddingHorizontal="10dp"
             android:textColor="@color/black"
-            android:text="@string/lorem" />
+            android:maxLines="10"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" />
 
         <TextView
-            android:id="@+id/textPunct"
+            android:id="@+id/punctuation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toRightOf="@id/imageURL"
-            app:layout_constraintTop_toBottomOf="@id/textList"
+            app:layout_constraintTop_toBottomOf="@id/shortInfo"
             app:layout_constraintRight_toRightOf="parent"
-            android:background="@color/button1"
+            android:background="@color/black"
             android:layout_marginTop="10dp"
             android:paddingHorizontal="10dp"
-            android:textColor="@color/black"
-            android:text="Puntuación: 4.5"
+            android:textColor="@color/white"
+            android:text="Puntuación: N.A."
             android:textStyle="bold"
             android:textAlignment="center"/>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
