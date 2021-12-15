@@ -13,16 +13,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/cardRecycler">
+        android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/cityName"
+            android:id="@+id/titleList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
             android:paddingVertical="5dp"
-            android:text="Ciudad"
+            android:text="Cartagena"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textAlignment="center"
@@ -32,36 +31,36 @@
             android:id="@+id/imageURL"
             android:layout_width="208dp"
             android:layout_height="208dp"
-            android:src="@drawable/temporal2_500px"
+            android:src="@drawable/tunja_500px"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cityName"/>
+            app:layout_constraintTop_toBottomOf="@id/titleList"/>
 
         <TextView
-            android:id="@+id/shortInfo"
+            android:id="@+id/textList"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toRightOf="@id/imageURL"
-            app:layout_constraintTop_toBottomOf="@id/cityName"
+            app:layout_constraintTop_toBottomOf="@id/titleList"
             app:layout_constraintRight_toRightOf="parent"
             android:paddingHorizontal="10dp"
             android:textColor="@color/black"
-            android:maxLines="10"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat" />
+            android:text="@string/lorem" />
 
         <TextView
-            android:id="@+id/punctuation"
+            android:id="@+id/textPunct"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toRightOf="@id/imageURL"
-            app:layout_constraintTop_toBottomOf="@id/shortInfo"
+            app:layout_constraintTop_toBottomOf="@id/textList"
             app:layout_constraintRight_toRightOf="parent"
-            android:background="@color/black"
+            android:background="@color/button1"
             android:layout_marginTop="10dp"
             android:paddingHorizontal="10dp"
-            android:textColor="@color/white"
-            android:text="Puntuación: N.A."
+            android:textColor="@color/black"
+            android:text="Puntuación: 4.5"
             android:textStyle="bold"
             android:textAlignment="center"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

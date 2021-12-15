@@ -1,135 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    tools:context = ".SitiosDescripcionFragment"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        tools:ignore="ExtraText">
 
         <TextView
-            android:id="@+id/cityNameTv"
+            android:id="@+id/cityName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_700"
-            android:focusable="false"
+            android:background="@color/cabeza"
             android:padding="10dp"
-            android:text="Ciudad"
+            android:text="@string/cityTunja"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
         <ImageView
-            android:id="@+id/image1"
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:focusable="false"
-            android:paddingTop="0dp"
-            android:src="@drawable/temporal2_500px"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cityNameTv" />
+            android:src="@drawable/tunja_500px"
+            app:layout_constraintTop_toBottomOf="@id/cityName"
+
+            tools:layout_editor_absoluteX="0dp" />
 
         <TextView
-            android:id="@+id/infoGeneralV"
+            android:id="@+id/titleDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            android:text="Información general"
+            android:text="@string/infoGeneral"
             android:textAlignment="textStart"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/image1"
-            android:focusable="false"/>
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <TextView
-            android:id="@+id/paragraph1"
+            android:id="@+id/textDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
-            app:layout_constraintTop_toBottomOf="@id/infoGeneralV"
-            android:focusable="false"/>
+            android:text="@string/tunja"
+            app:layout_constraintTop_toBottomOf="@id/titleDescripcion" />
 
         <TextView
-            android:id="@+id/infoLocation"
+            android:id="@+id/titleLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            android:text="Ubicación geográfica"
+            android:text="@string/location"
             android:textAlignment="textStart"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/paragraph1"
-            android:focusable="false"/>
+            app:layout_constraintTop_toBottomOf="@+id/textDescripcion" />
 
         <TextView
-            android:id="@+id/paragraph2"
+            android:id="@+id/textLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
-            app:layout_constraintTop_toBottomOf="@id/infoLocation"
-            android:focusable="false"/>
+            android:text="@string/locationTunja"
+            app:layout_constraintTop_toBottomOf="@id/titleLocation" />
 
         <TextView
-            android:id="@+id/infoTemperature"
+            android:id="@+id/titleTemperature"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            android:text="Temperatura y climatología"
+            android:text="@string/temperature"
             android:textAlignment="textStart"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/paragraph2"
-            android:focusable="false"/>
+            app:layout_constraintTop_toBottomOf="@+id/textLocation" />
 
         <TextView
-            android:id="@+id/paragraph3"
+            android:id="@+id/textTemperature"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
-            app:layout_constraintTop_toBottomOf="@id/infoTemperature"
-            android:focusable="false"/>
+            android:text="@string/tempTunja"
+            app:layout_constraintTop_toBottomOf="@id/titleTemperature" />
 
         <TextView
-            android:id="@+id/infoSites"
+            android:id="@+id/titleSites"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            android:text="Sitios recomendados"
+            android:text="@string/sites"
             android:textAlignment="textStart"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@+id/paragraph3"
-            android:focusable="false"/>
+            app:layout_constraintTop_toBottomOf="@+id/textTemperature" />
 
         <TextView
-            android:id="@+id/paragraph4"
+            android:id="@+id/textSites"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
-            app:layout_constraintTop_toBottomOf="@id/infoSites"
-            android:focusable="false"/>
+            android:text="@string/sitesTunja"
+            app:layout_constraintTop_toBottomOf="@id/titleSites" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#4CAF50"
+            android:src="@drawable/map_button"
+            app:layout_constraintBottom_toTopOf="@+id/titleDescripcion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

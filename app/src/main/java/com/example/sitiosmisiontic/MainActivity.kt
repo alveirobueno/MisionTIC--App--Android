@@ -1,53 +1,46 @@
-package com.example.sitiosmisiontic
+package com.mintic.travelappfinal
 
-import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import com.example.sitiosmisiontic.ui.SettingsActivity
+import android.view.View
+import android.view.Window
+import com.example.sitiosmisiontic.R
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var view : View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_activity)
-
-        setupFragment()
-
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.container, MainFragment.newInstance())
-                .commitNow()
-        }
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.activity_main)
+      /*  setSupportActionBar(findViewById(R.id.toolbar))
+        supportActionBar?.title = ""*/
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.settings_menu, menu)
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu,menu)
         return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-        when(item.itemId){
-            R.id.action_settings  -> {
-                val intent = Intent(this,
-                    SettingsActivity::class.java)
-
-                startActivity(intent)
+        // Handle item selection
+        return when (item.itemId) {
+            R.id.configure -> {
+                val fragment = SettingsFragment()
+                supportFragmentManager.beginTransaction().apply{
+                    replace(R.id.fragmentContainerView,fragment)
+                    commit()
+                }
+                true
             }
+            else -> super.onOptionsItemSelected(item)
         }
-
-        return super.onOptionsItemSelected(item)
     }
 
-    private fun setupFragment() {
-        val fragment = MainFragment.newInstance()
-        val fragmentManager: FragmentManager = supportFragmentManager
-        val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(android.R.id.content, fragment)
-        fragmentTransaction.commit()
+    companion object {
+        private const val TAG = "MainActivity"
     }
+
 }
