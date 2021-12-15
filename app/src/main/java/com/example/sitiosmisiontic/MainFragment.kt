@@ -51,7 +51,7 @@ class MainFragment : Fragment() {
         //Listener Detail
         recyclerAdapter.setOnItemClickListener(object : RecyclerViewAdapter.OnItemClickListener{
             override fun onItemClick(position: Int, data: SiteData) {
-                Toast.makeText(activity,"You Clicked on item no. $position",Toast.LENGTH_SHORT).show()
+                Toast.makeText(activity,"Has seleccionado ${data.cityName}",Toast.LENGTH_SHORT).show()
 
                 val intent = Intent(activity, DetailActivity::class.java)
 
