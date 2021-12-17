@@ -16,12 +16,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
 
         setupFragment()
-
-        if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.container, MainFragment.newInstance())
-                .commitNow()
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

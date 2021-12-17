@@ -11,5 +11,7 @@ data class SiteData(
     @SerializedName("shortInfo") val shortInfo: String,
     @SerializedName("sitesRec") val sitesRec: String,
     @SerializedName("tempClima") val tempClima: String,
-    @SerializedName("ubiGeo") val ubiGeo: String
+    @SerializedName("ubiGeo") val ubiGeo: String,
+    @SerializedName("latitud") val latitud: String,
+    @SerializedName("longitud") val longitud: String
 )

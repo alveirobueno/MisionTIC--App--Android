@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardBackgroundColor="#9DD2F0"
-    app:cardCornerRadius="16dp"
-    app:cardElevation="6dp"
+    app:cardBackgroundColor="#d3ebf8"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
     app:cardUseCompatPadding="true"
     android:id="@+id/item_site"
     >
@@ -21,11 +21,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="10dp"
-            android:paddingVertical="5dp"
+            android:paddingVertical="10dp"
             android:text="Ciudad"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <ImageView
@@ -34,7 +35,8 @@
             android:layout_height="208dp"
             android:src="@drawable/temporal2_500px"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cityName"/>
+            app:layout_constraintTop_toBottomOf="@id/cityName"
+            app:circularflow_radiusInDP="10dp"/>
 
         <TextView
             android:id="@+id/shortInfo"

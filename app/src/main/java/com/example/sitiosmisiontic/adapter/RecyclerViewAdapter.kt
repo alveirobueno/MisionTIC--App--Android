@@ -12,6 +12,7 @@ import com.squareup.picasso.Picasso
 
 class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
 
+    private var cities = ArrayList<SiteData>()
 
     private lateinit var mListener : OnItemClickListener
 
@@ -24,7 +25,7 @@ class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder
     }
 
 
-    private var cities = ArrayList<SiteData>()
+
 
 
     @SuppressLint("NotifyDataSetChanged")

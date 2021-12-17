@@ -1,17 +1,18 @@
 package com.example.androidapp
 
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.androidapp.model.SiteData
-import com.example.androidapp.model.SiteModel
 import com.example.sitiosmisiontic.R
 import com.squareup.picasso.Picasso
 
 class DetailActivity : AppCompatActivity() {
-
-    private var cities = ArrayList<SiteData>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +33,8 @@ class DetailActivity : AppCompatActivity() {
         val ubiGeo = bundle?.getString("ubiGeo")
         val tempClima = bundle?.getString("tempClima")
         val sitesRec = bundle?.getString("sitesRec")
+        val latitud = bundle?.getString("latitud")
+        val longitud = bundle?.getString("longitud")
 
         titleDetail.text = cityName
         Picasso.get().load(imageURL).resize(1000,600).into(image1Detail)
@@ -39,5 +42,19 @@ class DetailActivity : AppCompatActivity() {
         paragraph2Detail.text = ubiGeo
         paragraph3Detail.text = tempClima
         paragraph4Detail.text = sitesRec
+
+        val buttonMap : ImageButton = findViewById<ImageButton>(R.id.imageButton)
+        buttonMap.setOnClickListener(){
+            if (latitud != null && longitud != null) {
+                launchMap(latitud,longitud)
+            }
+        }
+    }
+
+    private fun launchMap(latitud: String, longitud: String) {
+        val gmmIntentUri = Uri.parse("geo:$latitud,$longitud")
+        val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+        mapIntent.setPackage("com.google.android.apps.maps")
+        startActivity(mapIntent)
     }
 }

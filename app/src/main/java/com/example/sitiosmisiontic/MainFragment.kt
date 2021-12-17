@@ -20,8 +20,6 @@ import com.example.sitiosmisiontic.viewmodel.MainViewModel
 
 class MainFragment : Fragment() {
 
-    private var cities = ArrayList<SiteData>()
-
     private lateinit var recyclerAdapter: RecyclerViewAdapter
 
     override fun onCreateView(
@@ -61,6 +59,8 @@ class MainFragment : Fragment() {
                 intent.putExtra("ubiGeo", data.ubiGeo)
                 intent.putExtra("tempClima", data.tempClima)
                 intent.putExtra("sitesRec", data.sitesRec)
+                intent.putExtra("latitud", data.latitud)
+                intent.putExtra("longitud", data.longitud)
 
                 activity?.startActivity(intent)
             }
