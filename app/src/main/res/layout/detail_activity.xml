@@ -19,7 +19,7 @@
             android:background="@color/teal_700"
             android:focusable="false"
             android:padding="10dp"
-            android:text="Ciudad"
+            android:text="@string/city_lorem"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -46,7 +46,7 @@
             android:focusable="false"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            android:text="Información general"
+            android:text="@string/general_info"
             android:textAlignment="textStart"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@+id/image1" />
@@ -58,7 +58,7 @@
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+            android:text="@string/lorem_ipsum_2"
             app:layout_constraintTop_toBottomOf="@id/infoGeneralV"
             android:focusable="false"/>
 
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            android:text="Ubicación geográfica"
+            android:text="@string/geolocation"
             android:textAlignment="textStart"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@+id/paragraph1"
@@ -81,7 +81,7 @@
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+            android:text="@string/lorem_ipsum_3"
             app:layout_constraintTop_toBottomOf="@id/infoLocation"
             android:focusable="false"/>
 
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="16dp"
             android:paddingTop="10dp"
-            android:text="Temperatura y climatología"
+            android:text="@string/temperature"
             android:textAlignment="textStart"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@+id/paragraph2"
@@ -104,7 +104,7 @@
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+            android:text="@string/lorem_ipsum_4"
             app:layout_constraintTop_toBottomOf="@id/infoTemperature"
             android:focusable="false"/>
 
@@ -127,7 +127,7 @@
             android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
-            android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+            android:text="@string/lorem_ipsum_5"
             app:layout_constraintTop_toBottomOf="@id/infoSites"
             android:focusable="false"/>
 
