@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.androidapp.model.SiteData
 import com.example.sitiosmisiontic.R
 import com.example.sitiosmisiontic.databinding.RecyclerListRowBinding
+import com.example.sitiosmisiontic.model.SiteData
 import com.squareup.picasso.Picasso
 
 class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder>() {
@@ -23,10 +23,6 @@ class RecyclerViewAdapter: RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder
     fun setOnItemClickListener(listener: OnItemClickListener){
         mListener = listener
     }
-
-
-
-
 
     @SuppressLint("NotifyDataSetChanged")
     fun setUpdateData(cities: ArrayList<SiteData>){

@@ -12,9 +12,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.androidapp.DetailActivity
-import com.example.androidapp.model.SiteData
-import com.example.androidapp.model.SiteModel
+import com.example.sitiosmisiontic.ui.DetailActivity
+import com.example.sitiosmisiontic.model.SiteData
+import com.example.sitiosmisiontic.model.SiteModel
 import com.example.sitiosmisiontic.adapter.RecyclerViewAdapter
 import com.example.sitiosmisiontic.viewmodel.MainViewModel
 
@@ -66,8 +66,6 @@ class MainFragment : Fragment() {
             }
 
         })
-
-
     }
 
     private fun initViewModel1() {
@@ -78,7 +76,6 @@ class MainFragment : Fragment() {
             } else {
                 Toast.makeText(activity, "Error al traer los datos", Toast.LENGTH_SHORT).show()
             }
-
         })
         viewModel.makeApiCall()
     }

@@ -1,6 +1,6 @@
 package com.example.sitiosmisiontic.network
 
-import com.example.androidapp.model.SiteModel
+import com.example.sitiosmisiontic.model.SiteModel
 import retrofit2.http.GET
 
 interface RetrofitService {

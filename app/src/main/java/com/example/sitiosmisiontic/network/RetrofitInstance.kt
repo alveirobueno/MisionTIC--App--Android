@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class RetrofitInstance {
 
     companion object {
-//        private const val BaseURL = "https://us-east-1.aws.data.mongodb-api.com/app/cities-fkkaa/endpoint"
+
         private const val BaseURL = "https://mocki.io/v1/"
 
         fun getRetroInstance(): Retrofit {
