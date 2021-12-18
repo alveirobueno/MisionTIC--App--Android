@@ -43,7 +43,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.androidapp.DetailActivity"
+            android:name=".ui.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".ui.SettingsActivity"

@@ -55,6 +55,7 @@
             android:id="@+id/paragraph1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
             android:paddingHorizontal="16dp"
             android:paddingBottom="10dp"
             android:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"

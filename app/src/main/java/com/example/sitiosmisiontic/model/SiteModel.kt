@@ -1,8 +1,10 @@
-package com.example.androidapp.model
+package com.example.sitiosmisiontic.model
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-data class SiteModel(val cities : ArrayList<SiteData>)
+data class SiteModel(val cities: ArrayList<SiteData>)
+
 data class SiteData(
     @SerializedName("cityName") val cityName: String,
     @SerializedName("imageURL") val imageURL: String,
@@ -14,4 +16,4 @@ data class SiteData(
     @SerializedName("ubiGeo") val ubiGeo: String,
     @SerializedName("latitud") val latitud: String,
     @SerializedName("longitud") val longitud: String
-)
+) : Serializable

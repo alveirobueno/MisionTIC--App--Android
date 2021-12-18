@@ -25,10 +25,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
-        when(item.itemId){
-            R.id.action_settings  -> {
-                val intent = Intent(this,
-                    SettingsActivity::class.java)
+        when (item.itemId) {
+            R.id.action_settings -> {
+                val intent = Intent(
+                    this,
+                    SettingsActivity::class.java
+                )
 
                 startActivity(intent)
             }
